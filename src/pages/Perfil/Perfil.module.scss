@@ -1,0 +1,18 @@
+@import "../../styles/variaveis";
+
+.wrap{
+    width: 100%;
+    max-width: $wrap;
+    margin: $wrap-margin;
+    box-sizing: border-box;
+    display: flex;
+    .infos{
+        margin: 20px auto;
+        .sociais{
+            margin:  20px 0;
+        }
+        .sociaisLinks{
+            margin-right: 10px;
+        }
+    }
+}

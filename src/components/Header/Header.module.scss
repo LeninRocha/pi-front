@@ -1,0 +1,47 @@
+@import "../../styles/variaveis";
+
+.header{
+    background-color: $grey;
+    .wrap{
+        width: 100%;
+        max-width: $wrap;
+        margin: $wrap-margin;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        .logo{
+            color: $blue;
+            font-size: 24px;
+            padding: 20px 0;
+        }
+        .menuItem{
+            padding: 20px ;
+            color: $dark ;
+        }
+        .form{
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .input{
+                border: none;
+                &:focus {    
+                    box-shadow: 0 0 0 0;
+                    outline: 0;
+                }
+            }
+            .select{
+                border: none;
+            }
+            .button{
+                border: 1px solid #fff;
+                background-color: $blue;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+

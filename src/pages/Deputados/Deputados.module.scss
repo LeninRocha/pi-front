@@ -1,0 +1,55 @@
+@import "../../styles/variaveis";
+
+.wrap{
+    width: 100%;
+    max-width: $wrap;
+    margin: $wrap-margin;
+    box-sizing: border-box;
+    .card{
+        box-sizing: border-box;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid $blue;
+        width: calc(25% - 40px);
+        float: left;
+        .img{
+            width: 100%;
+        }
+        .mail{
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .pages{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 40px;
+        .btn{
+            padding: 5px;
+            border-radius: 50px;
+            background-color: $blue;
+            border: none;
+            &:hover{
+                opacity: .8;
+            }
+        }
+        .showPage{
+            font-size: 20px;
+            margin: 0 20px;
+            background-color: $grey;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    }
+}
+
+
