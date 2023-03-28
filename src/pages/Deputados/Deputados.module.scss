@@ -9,7 +9,7 @@
         box-sizing: border-box;
         margin: 20px;
         padding: 10px;
-        border: 1px solid $blue;
+        border: 1px solid $secondaryColor;
         width: calc(25% - 40px);
         float: left;
         .img{
@@ -36,7 +36,7 @@
         .btn{
             padding: 5px;
             border-radius: 50px;
-            background-color: $blue;
+            background-color: $secondaryColor;
             border: none;
             &:hover{
                 opacity: .8;
@@ -45,7 +45,8 @@
         .showPage{
             font-size: 20px;
             margin: 0 20px;
-            background-color: $grey;
+            color: $terciaryColor;
+            background-color: $secondaryColor;
             border-radius: 5px;
             padding: 10px;
         }

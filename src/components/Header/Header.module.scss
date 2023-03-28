@@ -1,7 +1,7 @@
 @import "../../styles/variaveis";
 
 .header{
-    background-color: $grey;
+    background-color: $terciaryColor;
     .wrap{
         width: 100%;
         max-width: $wrap;
@@ -11,23 +11,47 @@
         justify-content: space-between;
         box-sizing: border-box;
         .logo{
-            color: $blue;
-            font-size: 24px;
-            padding: 20px 0;
+            font-size: 0px;
+            cursor: pointer;
+            &:before{
+                content: "";
+                display: inline-block;
+                background-image: $logo;
+                height: 100px;
+                width: 200px;
+                
+            }
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .menuItem{
             padding: 20px ;
-            color: $dark ;
+            color: $secondaryColor ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:before{
+                content: "";
+                display: inline-block;
+                background-color: $primaryColor;
+                height: 7px;
+                width: 7px;
+                margin-right: 3px;
+            }
         }
         .form{
             border-radius: 5px;
-            background-color: #fff;
-            border: 1px solid $blue;
+            background-color: $terciaryColor;
+            border: 1px solid $secondaryColor;
             display: flex;
             justify-content: center;
             align-items: center;
             .input{
                 border: none;
+                background-color: $terciaryColor;
                 &:focus {    
                     box-shadow: 0 0 0 0;
                     outline: 0;
@@ -38,7 +62,7 @@
             }
             .button{
                 border: 1px solid #fff;
-                background-color: $blue;
+                background-color: $secondaryColor;
                 border-radius: 5px;
             }
         }

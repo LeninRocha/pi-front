@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #ecf8e5;
 
 }
 ol, ul {
@@ -46,4 +47,7 @@ table {
 }
 a{
     text-decoration: none;
+}
+button{
+    cursor: pointer;
 }

@@ -1,0 +1,52 @@
+@import "../../styles/variaveis";
+
+.wrap{
+    width: 100%;
+    max-width: $wrap;
+    margin: $wrap-margin;
+    box-sizing: border-box;
+    .w100{
+        width: 100%;
+        height: 10vh;
+        .logo{
+            display: inline-block;
+            background-image: $logo;
+            height: 100px;
+            width: 200px;
+        }
+    }
+    .w50{
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80vh;
+
+        .title{
+            color: $secondaryColor;
+            font-size: 3.5rem;
+            margin-top: 20px;
+        }
+        .btnHome{
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;           
+            width: fit-content;
+            padding: 10px 30px;
+            border-radius: 50px;
+            a{
+                font-size: 1.2em;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+        .fundo{
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-home;
+        }
+    }
+}

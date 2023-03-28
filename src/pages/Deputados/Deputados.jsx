@@ -23,8 +23,8 @@ export function Deputados(){
                 return(
                   <article key={deputados.id} className={styles.card}>
                     <img src={deputados.urlFoto} alt={deputados.nome} className={styles.img}/>
-                    <h3 className={styles.name}> <IoPerson size={14} color="#282b57"/> {deputados.nome}</h3>
-                    <a className={styles.mail} href={`mailto:${deputados.email}`}> <IoMailOutline size={14} color="#282b57"/> {deputados.email}</a>
+                    <h3 className={styles.name}> <IoPerson size={14} color="#347571"/> {deputados.nome}</h3>
+                    <a className={styles.mail} href={`mailto:${deputados.email}`}> <IoMailOutline size={14} color="#347571"/> {deputados.email}</a>
                     
                     <div className={styles.info}>
                         <span>{deputados.siglaUf}</span>
@@ -38,13 +38,13 @@ export function Deputados(){
                     <button
                     className={styles.btn}
                      onClick={() =>setPage (page > 1 && page - 1 )}>
-                        <IoArrowBackSharp size={20} color="#fff"/>
+                        <IoArrowBackSharp size={20} color="#ecf8e5"/>
                     </button>
                     <span className={styles.showPage} >{page}</span>
                     <button
                     className={styles.btn} 
                     onClick={(e) =>setPage (page + 1)}>
-                        <IoArrowForwardSharp size={20} color="#fff"/>
+                        <IoArrowForwardSharp size={20} color="#ecf8e5"/>
                     </button>
                 </div>
             </div>
